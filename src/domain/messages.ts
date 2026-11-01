@@ -1,0 +1,25 @@
+// Every user-facing message, matching the Messages table in docs/user-stories.md.
+export const messages = {
+  amountRequired: 'Enter the amount borrowed.',
+  rateRequired: 'Enter the interest rate.',
+  lengthRequired: 'Enter the loan length.',
+  notANumber: 'Enter a number using only digits, a decimal point and commas.',
+  tooManyDecimals: 'Use no more than 2 decimal places.',
+  commas: 'Use a point for decimals (4.5) and commas only between thousands (250,000).',
+  amountRange: 'Enter an amount between $1,000 and $100,000,000.',
+  rateRange: 'Enter a rate between 0% and 50%.',
+  monthsRange: 'Enter a whole number of months between 1 and 120.',
+  yearsRange: 'Enter a whole number of years between 1 and 10.',
+  feePercentRange: 'Enter a fee between 0% and 10%.',
+  feeFixedRange: 'Enter a fee of $0 or more, less than the amount borrowed.',
+  resultsPlaceholder: 'Enter the amount borrowed, interest rate and loan length to see results.',
+  resultsWhenValid: 'Results appear once every box has a valid value.',
+  addAnotherOffer: 'Add another offer to compare.',
+  completeAnotherOffer: 'Complete another offer to compare.',
+  differentAmounts:
+    "These offers are for different amounts, so they can't be ranked. Use the same amount borrowed in every offer to compare them.",
+  disclaimer: "Estimates only. Your lender's figures may differ slightly because of rounding.",
+  lowestTotalCost: 'Lowest total cost',
+  lowestMonthlyPayment: 'Lowest monthly payment',
+  costsMore: (amount: string) => `Costs ${amount} more in total`,
+}
